@@ -5,8 +5,8 @@ use to test Drupal on.  I'll polish documentation later on.
 
 ## Prerequisites
 
-You must have Ruby and Rubygems installed.  Use "RVM":http://beginrescueend.com/rvm/install to install it.  Also install
-the following gems:
+You must have Ruby and Rubygems installed.  Use "RVM":http://beginrescueend.com/rvm/install to install it.  You'll need 
+FireFox and also the following gems:
 
 * selenium-webdriver
 * rspec
