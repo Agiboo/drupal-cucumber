@@ -10,3 +10,8 @@ Feature: Testing node module
     Given I'm logged in as an administrator
     When I create a new page that's promoted to the front page
     Then I can see that new page on the front page
+
+  Scenario: Ensure a page is editable
+    Given I'm logged in as an administrator
+    When I create a new page and unpublish it
+    Then I can't see that page anymore

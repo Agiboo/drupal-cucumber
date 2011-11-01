@@ -17,7 +17,6 @@ namespace :test do
     exclude_tags.each {|tag| command_str << " --tags ~@#{tag}"} unless exclude_tags.nil?
     
     # And run the command ofc
-    puts command_str
     system command_str
   end
 end

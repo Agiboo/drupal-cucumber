@@ -7,7 +7,8 @@ def within_drupal_overlay &block
   end
   
   within_frame 'overlay-active' do
-    block.call
+    sleep 1
+    yield
   end
 end
 
