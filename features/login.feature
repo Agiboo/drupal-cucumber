@@ -1,15 +1,15 @@
 @drupal_core @user
-Feature: Testing user access
+Feature: Testing user module
 
-  Scenario: Ensure a login screen is available.
-    When I visit the login page
-    Then I see the login form
+  Scenario: Ensure a user can log in
+    When I fill in the login form and I submit it
+    Then I am logged in
 
-  Scenario: Ensure I can change my details.
-    Given I'm logged in as an administrator
-    When I change my profile details
-    Then the profile changes are in effect
+  Scenario: Ensure a user can properly log in
+    Given I'm logged in as an authenticated user
+    Then I can see my history
 
-  Scenario: Ensure I can navigate through the website.
-    Given I'm logged in as an administrator
-    Then I can navigate through the site
+  Scenario: Ensure a user can edit his details
+    Given I'm logged in as an authenticated user
+    When I change my e-mail address
+    Then my e-mail address has changed
