@@ -26,6 +26,9 @@ You can change the basic settings in the file `tasks/setup.rb`
 * `DRUPAL_BASE_PATH`: the URL to your drupal installation (e.g localhost/yourapp or yourapp.com)
 * `DRUPAL_DRIVER`: the driver used to test the app.  Only supported driver for now is Selenium (and is most tested solution)
 
+You must enable the cucumber_helper module.  [You can clone it here](https://github.com/Agiboo/Cucumber-helper "Cucumber_helper project").  This creates one user per role.  The credentials (for debugging) are 
+"cucumber_[rolename]" for username and password.  A user based on the role editor will have the credentials cucumber_editor/cucumber_editor.
+
 ## Execute tests
 
 Go to the root of this repo and type "rake test:run".  This will automatically trigger the tests to run.
