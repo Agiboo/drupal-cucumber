@@ -14,10 +14,8 @@ FireFox and also the following gems:
 * capybara
 * gherkin
 
-Drop me a message if you encounter errors.
-
-You need to install the module to create bulk users, generated per existing role within Drupal.  *TODO* Insert link 
-to github module.
+Drop me a message if you encounter errors (Email below).
+ 
 
 ## Setup
 
@@ -33,6 +31,15 @@ You must enable the cucumber helper module.  [You can clone it here](https://git
 
 Go to the root of this repo and type "rake test:run".  This will automatically trigger the tests to run.
 
-Good luck
+On top of that, you can decide which tests using tags.  If you want to run a suite that only tests the features 
+tagged with @node you can do as described below:
+
+* `rake test:run include=node`
+
+Separate tags with commas:
+
+* `rake test:run include=foo,bar,baz exclude=bonzo,yadda_yadda`
+
+## Contact
 
 info at heartdriven dotcom
