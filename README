@@ -1,0 +1,8 @@
+= Cucumber testing for Drupal
+
+This is a little framework I wrote to write front-end tests using Cucumber.  There are some basic functions you can 
+use to test Drupal on.  I'll polish documentation later on.
+
+Good luck
+
+info at heartdriven dotcom
