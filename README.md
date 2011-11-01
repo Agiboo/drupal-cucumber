@@ -19,6 +19,13 @@ Drop me a message if you encounter errors.
 You need to install the module to create bulk users, generated per existing role within Drupal.  *TODO* Insert link 
 to github module.
 
+## Setup
+
+You can change the basic settings in the file `tasks/setup.rb`
+
+* `DRUPAL_BASE_PATH`: the URL to your drupal installation (e.g localhost/yourapp or yourapp.com)
+* `DRUPAL_DRIVER`: the driver used to test the app.  Only supported driver for now is Selenium (and is most tested solution)
+
 ## Execute tests
 
 Go to the root of this repo and type "rake test:run".  This will automatically trigger the tests to run.
