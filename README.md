@@ -3,6 +3,11 @@
 This is a little framework I wrote to write front-end tests using Cucumber.  There are some basic functions you can 
 use to test Drupal on.  I'll polish documentation later on.
 
+## Demonstration
+
+If you want to know what cucumber and this framework exactly does with a drupal site, then 
+[check out this video](http://vimeo.com/31483674).
+
 ## Prerequisites
 
 You must have Ruby and Rubygems installed.  Use [RVM](http://beginrescueend.com/rvm/install "Ruby Version Manager") to install it.  You'll need 
