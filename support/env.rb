@@ -3,6 +3,7 @@ require 'rspec'
 
 app_base_path = ENV['BASE_PATH']
 Capybara.app_host = "http://#{app_base_path}/"
+Capybara.default_wait_time = 1
 
 if ENV['DRIVER'].eql?'selenium'
   Capybara.default_driver = :selenium

@@ -5,5 +5,5 @@ def within_drupal_overlay &block
     yield
     #sleep 1
   end
-  sleep Capybara.default_wait_time
+  #sleep Capybara.default_wait_time
 end
